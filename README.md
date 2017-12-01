@@ -1,0 +1,1 @@
+this is the stage in the app. simple not complex app that doesn't have any npm feature
