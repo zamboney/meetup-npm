@@ -1,4 +1,4 @@
-# [NPM](zamboney.github.io/meetup-npm)
+# [NPM](https://zamboney.github.io/meetup-npm)
 
 form 0 to ninja!
 
