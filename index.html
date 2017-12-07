@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/sky.min.css" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+                <section data-markdown="README.md"  
+                data-separator="^\n\n\n"  
+                data-separator-vertical="^\n\n"  
+                data-separator-notes="^Note:"  
+                data-charset="iso-8859-15">
+       </section>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+    <script>
+        Reveal.initialize({
+            history: true,
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                // { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+
+                // // Interpret Markdown in <section> elements
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+
+                // // Syntax highlight for <code> elements
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
