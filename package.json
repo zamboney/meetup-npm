@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "this is the stage in the app. simple not complex app that doesn't have any npm feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamboney/meetup-npm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamboney/meetup-npm/issues"
+  },
+  "homepage": "https://github.com/zamboney/meetup-npm#readme",
+  "dependencies": {
+    "moment": "^2.19.3"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
