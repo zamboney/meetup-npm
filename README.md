@@ -8,56 +8,142 @@
 create the `package.json` file
 
 
+```
+// create package.json with prompt
+npm init
+
+// create package.json without prompt
+npm init -f
+```
+
+
 
 ## `npm install` 
 installing a new dependency package that can be used in the package
 
 
- 
+```
+// save the package in dependency
+npm install --save <package>
+
+// save the package in devDependency
+npm install --save-dev <package>
+```
+
+
+
+## NPM run
+npm as task runner
+
+
+in the `package.json` There is a property called `scripts`. This property can be used as a task runner.
+
+
+NPM run can read this scripts and also can detect it there a `pre` or `post` script
+
+
+### extra:
+[husky](https://www.npmjs.com/package/husky)
+
+
+
+### .npmrc
+
+`.npmrc` is a config file that can set the registry end point (and also other properties)
+```
+npm config list
+```
+in this demo we will use local `.npmrc` 
+> the general `.npmrc` located in `~/.npmrc` on mac and `%userprofile%/.npmrc` in windows
+
+
+
 ## `npm publish`
+publish the you package
 
 
 NPM is a registry that can store packages for other developers use
 
 
 1. `npm adduser` (done once in a machine).
-    * register the user in the machine
+    * register the user in the `.npmrc`
 2. `npm publish`.
     * publish the package to the default repository
 
 
-### .npmrc
-
-`.npmrc` is a config file that can set the registry end point (and also other properties
-
-> using `npm config list` to check the complete list of properties that can be set.
-
-> in this demo we will use local `.npmrc` the general `.npmrc` located in `~/.npmrc` on mac and `%userprofile%/.npmrc` in windows
-
-
-
 
 ## NPM version
+*semver* version.
 
 
-npm using *SEMVER* version.
+using `npm publish` can do only once per version (a.k.a. `package.json` version property).
 
 
-using `npm publish` can do only once per version (a.k.a. `package.json` version propery).
+to maintain changes NPM using Semantic Versioning (a.k.a *semver*).
+
+
+### Semantic Versioning
+
+
+![sem ver](semver02.png)
+
+
+|symbol|dependency|versions
+|:-|:-|:-
+|caret(^)|^1.2.3|1.\*.\*
+|tilde(~)|~1.2.3|1.2.\*
+
+
+```
+npm version <major|minor|patch>;
+npm version <major|minor|patch> -m "%s version update"
+```
 
 
 
-
-## NPM run
-
-in the `package.json` There is a property called `scripts`. This property can be used as a task run.
+## npm scopes
+group you code
 
 
-NPM run can read this scripts and also can detect it there a `pre` or `post` script
+scopes, in npm, is a way to district your code from anther packages. this is can be use if your package use official NPM and your packages is in a local npm registry.
+
+
+``` javascript
+npm init --scope=username
+npm config set scope username
+```
 
 
 
-## npm Groups
+## `npm link`
+develop you packages form package
 
 
-using npm on your code can be focetr
+developing multi packages isn't an easy task. using `npm link` you can link your packages to where it use and develop the packages on the main packages.
+
+
+``` javascript
+npm link // in the source package
+npm link <package-name> // in the root packages
+npm ls --link // show the linked packages
+```
+
+
+
+## npm cli (extra)
+convert your node package to cli
+
+
+using the `package.json` bin property you can convert you `node index.js` in to a easy to cli
+
+
+```
+// put your package in the npm path
+npm link 
+
+// run you package cli command.
+```
+
+
+
+# TANK YOU!
