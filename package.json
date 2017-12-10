@@ -1,7 +1,7 @@
 {
   "name": "meetup-npm",
   "version": "1.0.0",
-  "description": "",
+  "description": "form 0 to ninja!",
   "main": "index.js",
   "scripts": {
     "start": "live-server"
@@ -10,6 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "auth": "0.0.9",
     "live-server": "^1.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamboney/meetup-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zamboney/meetup-npm/issues"
+  },
+  "homepage": "https://github.com/zamboney/meetup-npm#readme"
 }

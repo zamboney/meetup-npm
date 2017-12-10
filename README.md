@@ -72,7 +72,7 @@ NPM is a registry that can store packages for other developers use
 
 
 
-## NPM version
+## `npm version`
 *semver* version.
 
 
@@ -115,6 +115,15 @@ npm config set scope username
 
 
 
+## reuse of code
+
+take you package to other  packages
+
+
+once you publish (and handle the versioning) of your package you can now reuse that code.
+
+
+
 ## `npm link`
 develop you packages form package
 
@@ -130,6 +139,7 @@ npm ls --link // show the linked packages
 
 
 
+
 ## npm cli (extra)
 convert your node package to cli
 
@@ -140,6 +150,9 @@ using the `package.json` bin property you can convert you `node index.js` in to 
 ```
 // put your package in the npm path
 npm link 
+
+// install the package globally
+npm install -g <package-name>
 
 // run you package cli command.
 ```
