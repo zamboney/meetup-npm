@@ -83,9 +83,8 @@ to maintain changes NPM using Semantic Versioning (a.k.a *semver*).
 
 
 ### Semantic Versioning
-
-
 ![sem ver](semver02.png)
+> [leftpad](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code/)
 
 
 |symbol|dependency|versions
