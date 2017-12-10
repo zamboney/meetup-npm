@@ -4,8 +4,7 @@
   "description": "this is the stage in the app. simple not complex app that doesn't have any npm feature",
   "main": "index.js",
   "scripts": {
-    "precommit": "npm test",
-    "test": "mocha logger/test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,6 @@
     "moment": "^2.19.3"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
     "mocha": "^4.0.1"
   }
 }
