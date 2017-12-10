@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this is the stage in the app. simple not complex app that doesn't have any npm feature",
   "main": "index.js",
   "scripts": {
