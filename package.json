@@ -4,8 +4,9 @@
   "description": "this is the stage in the app. simple not complex app that doesn't have any npm feature",
   "main": "index.js",
   "scripts": {
-    "test": "mocha logger/index.js",
-    "precommit": "npm run test"
+    "test": "mocha logger/test.js",
+    "precommit": "npm run test",
+    "prepublish": "npm test && npm version patch"
   },
   "repository": {
     "type": "git",
