@@ -109,6 +109,7 @@ scopes, in npm, is a way to district your code from other packages. this is can 
 
 ``` javascript
 npm init --scope=username
+npm adduser --registry <url>
 npm config set scope username
 ```
 
