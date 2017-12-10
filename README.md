@@ -105,7 +105,7 @@ npm version <major|minor|patch> -m "%s version update"
 group you code
 
 
-scopes, in npm, is a way to district your code from anther packages. this is can be use if your package use official NPM and your packages is in a local npm registry.
+scopes, in npm, is a way to district your code from other packages. this is can be use if your package use official NPM and your packages is in a local npm registry.
 
 
 ``` javascript
